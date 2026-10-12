@@ -25,6 +25,7 @@
 
 namespace Aspose.CAD.Cloud.Sdk.Api
 {
+    using System.IO;
     using System.Collections.Generic;
     using System.Text.RegularExpressions;
     using Aspose.CAD.Cloud.Sdk;
@@ -2104,7 +2105,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2145,7 +2147,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2172,6 +2175,7 @@ namespace Aspose.CAD.Cloud.Sdk.Api
 
             // create path and map variables
             var resourcePath = this.Configuration.GetApiRootUrl() + "/cad/dxf";
+
             resourcePath = Regex
                         .Replace(resourcePath, "\\*", string.Empty)
                         .Replace("&amp;", "&")
@@ -2186,7 +2190,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2227,7 +2232,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2268,7 +2274,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2309,7 +2316,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2350,7 +2358,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2391,7 +2400,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2432,7 +2442,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2473,7 +2484,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2514,7 +2526,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2555,7 +2568,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2596,7 +2610,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2637,7 +2652,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2678,8 +2694,10 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
+
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
                 "PUT", 
@@ -2719,7 +2737,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2760,7 +2779,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2801,7 +2821,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2842,7 +2863,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2883,7 +2905,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2924,7 +2947,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -2965,7 +2989,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
@@ -3006,7 +3031,8 @@ namespace Aspose.CAD.Cloud.Sdk.Api
             }
             if (request.ExportOptions != null) 
             {
-                formParams.Add("exportOptions", request.ExportOptions);
+                byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(request.ExportOptions);
+                formParams.Add("exportOptions", this.apiInvoker.ToFileInfo(new MemoryStream(jsonBytes), "exportOptions.json"));
             }
             var response = this.apiInvoker.InvokeBinaryApi(
                 resourcePath, 
